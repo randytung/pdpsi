@@ -1,5 +1,4 @@
-# pdpsi
-website for cornellpdpsi 
+# Website for Cornellpdpsi
 This webapp will use Django as the python web framework in the backend to describe all of the models we use. Then, we will use Restless API in order to serialize all of the data into JSON and send it back to the front end. 
 
 ##Setting up the virtual environment
