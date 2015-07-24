@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import PClass, Brother
 
-# Register your models here.
+admin.site.register(PClass)
+admin.site.register(Brother)
