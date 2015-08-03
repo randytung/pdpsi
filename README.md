@@ -22,6 +22,12 @@ Fourth, you have to navigate into the cloned repository and download all of the 
 $ pip install -r requirements.txt
 ```
 
+## Setting up Database
+To install all of the brothers into the database, cd into the file with manage.py and run
+```
+$ python manage.py add_brothers
+```
+
 
 
 
