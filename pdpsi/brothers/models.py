@@ -1,17 +1,18 @@
 from django.db import models
 
-class pClass(models.Model):
+class PClass(models.Model):
 	class_name = models.CharField(max_length=200)
 	year_crossed = models.CharField(max_length=200)
 
 	def __str__(self):
-		return self.pledge_class
+		return self.class_name
 
-class brother(models.Model):
+class Brother(models.Model):
 	name = models.CharField(max_length=200)
-	pledge_class = models.ForeignKey(pClass, related_name='brothers')
+	pledge_class = models.ForeignKey(PClass, related_name='brothers')
 	pledge_name = models.CharField(max_length=200)
-	line_number = models.IntegerField(max_length=10)
+	line_number = models.IntegerField(default=0)
+	active = models.BooleanField()
 
 	def __str__(self):
 		return self.name

@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from brothers import api
+from rest_framework.urlpatterns import format_suffix_patterns
+from django.conf.urls import include
+
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^api-root$', api.api_root),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+     url(r'^brothers/$', api.BrotherList.as_view(),
+        name='brother-list'),
+    url(r'^class/$', api.ClassList.as_view(),
+        name='class-list'),
 ]
