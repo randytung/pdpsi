@@ -6,50 +6,160 @@
      	<link rel="stylesheet" href="styles/bootstrap.min.css">
      	<link rel="stylesheet" href="styles.css">
 
+
+
     </head>
 
+
 <body>
-	<div class = "navbar navbar-inverse navbar-static-top" >
-		<div class = "container">
-			<a href ="#" class ="navbar-brand"> Cornell Pi Delta Psi Inc. </a>
+	<div class = "navbar navbar-inverse navbar-fixed-top" >
+		<div class = "container-fluid">
+
+			<a href ="index.html" class ="navbar-brand"> Cornell Pi Delta Psi Inc. </a>
 
 			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-			Hello 
+			Add navbar buttons that appear on mobile screens
 			</button>
 
 			<div class = "collapse navbar-collapse navHeaderCollapse">
 				<ul class = "nav navbar-nav navbar-right">
 					<li>
-						<a href = "#">Our Mission</a>
+						<a href = "contact.html">Contact</a>
 					</li>
 					
 				</ul>
 
 				<ul class = "nav navbar-nav navbar-right">
 					<li>
-						<a href = "#">Brothers</a>
+						<a href = "brothers.html">Brothers</a>
 					</li>
 					
 				</ul>
 
 				<ul class = "nav navbar-nav navbar-right">
 					<li>
-						<a href = "#">Rush</a>
+						<a href = "news.html">News</a>
+					</li>
+					
+				</ul>
+
+				<ul class = "nav navbar-nav navbar-right">
+					<li>
+						<a href = "rush.html">Rush</a>
+					</li>
+					
+				</ul>
+
+				<ul class = "nav navbar-nav navbar-right">
+					<li>
+						<a href = "about.html">About</a>
 					</li>
 					
 				</ul>
 
 
-
-			</div>
-			
-
+			</div>	
 		</div>
+	</div>
+
+		<div class = "jumbotron" style = "margin-bottom:0px">
+		
+		
+
+		<div class = "container">
+
+		<h1 class = "text-center">Fall Rush 2015</h1>
+      	<p class = "text-center">Fall Rush Begins on August 31st, 2015. Come meet the brothers of Pi Delta Psi and see if being in a multicultural fraternity is right for you.</p>
+      	<p class = "text-center"><a href = "rush.html" class="btn btn-primary btn-lg" role="button">
+         Learn more</a>
+      	</p>
+		</div>
+
+	</div>
+
+	<div id= "myCarousel" class="carousel slide">
+
+		<ol class  ="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class = "active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<div class = "carousel-inner">
+			<div class = "item active">
+			<img src= "https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/11046817_10204448350468123_3487541305742896919_o.jpg" alt="asd" class = "img-responsive">
+			</div>
+
+			<div class = "item">
+			<img src= "images/nice.jpg" class="img-responsive" alt="Alpha Delta Pledge Class at Banquet 2015">
+			</div>
+
+			<div class = "item">
+			<img src= "images/IMG_0947.jpg" alt="asd" class = "img-responsive">
+			</div>
+		</div>
+
+		<a class = "carousel-control left" href="#myCarousel" data-slide = "prev">
+				<span class = "icon-prev"></span>
+		</a>
+
+		<a class = "carousel-control right" href="#myCarousel" data-slide = "next">
+				<span class = "icon-next"></span>
+		</a>
 
 
 	</div>
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<div class = "container">
+
+		<div class = "row">
+
+			<div class = "col-md-4">
+
+				<h3><a href="#">Fall Rush Schedule</a></h3>
+				<p> Text here to describe fall rush filler text blah</p>
+				<a href="#" class = "btn btn-default">Read More</a>
+
+			</div>
+
+			<div class = "col-md-4">
+
+				<h3><a href="#">Pi Delta Psi Continues to Kick Ass</a></h3>
+				<p> A year after its founding, Pi Delta Psi was officially incorporated in the State of New York on April 19, 1995. After five years, the fraternity had expanded too large for the Pi Delta Psi National Council to maintain. </p>
+				<a href="#" class = "btn btn-default">Read More</a>
+
+			</div>
+
+			<div class = "col-md-4">
+
+				<h3><a href="#">Pi Delta Psi </a></h3>
+				<p> A year after its founding, Pi Delta Psi was officially incorporated in the State of New York on April 19, 1995. After five years, the fraternity had expanded too large for the Pi Delta Psi National Council to maintain. </p>
+				<a href="#" class = "btn btn-default">Read More</a>
+
+			</div>
+		</div>
+
+	</div>
+
+	<h2 class = "text-center" ><em>Excellence Through Brotherhood</em></h2>
+
+
+	<div class = "navbar navbar-inverse navbar-static-bottom">
+		<div class = "container">
+			<p class = "navbar-text"> Cornell Pi Delta Psi Inc. 2015</p>
+
+		</div>
+	</div>
+
+
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+	<script> $('#myCarousel').carousel({ interval: 3000 }) </script>
 
 </body>
 
